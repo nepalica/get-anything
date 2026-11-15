@@ -16,8 +16,7 @@ import { getPaymentConfig } from "./controllers/paymentController.js";
 
 const backendDirectory = path.dirname(fileURLToPath(import.meta.url));
 dotenv.config({ path: path.resolve(backendDirectory, "../.env") });
-const port = process.env.PORT || 5000;
-
+const port = Number(process.env.PORT) || 10000;
 const app = express();
 
 app.use(express.json());
@@ -41,4 +40,8 @@ const __dirname = path.resolve();
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 await connectDB();
-app.listen(port, () => console.log(`Server running on port: ${port}`));
+await connectDB();
+
+app.listen(port, "0.0.0.0", () => {
+  console.log(`Server running on port: ${port}`);
+});
