@@ -9,7 +9,7 @@ import ProductImage from "../../components/ProductImage";
 import { useCreateOrderMutation } from "../../redux/api/orderApiSlice";
 import { clearCartItems } from "../../redux/features/cart/cartSlice";
 import { NprPrice } from "../../components/CurrencyProvider";
-import { getApiErrorMessage } from "../../utils/apiErrors";
+import { getApiErrorMessage } from "../../Utils/apiErrors.js";
 
 const PlaceOrder = () => {
   const navigate = useNavigate();

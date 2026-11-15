@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useGetOrdersQuery } from "../../redux/api/orderApiSlice";
 import ProductImage from "../../components/ProductImage";
 import { NprPrice } from "../../components/CurrencyProvider";
-import { getApiErrorMessage } from "../../utils/apiErrors";
+import { getApiErrorMessage } from "../../Utils/apiErrors.js";
 
 const OrderList = () => {
   const { data: orders, isLoading, error } = useGetOrdersQuery(undefined, {
