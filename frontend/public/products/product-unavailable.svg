@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <rect width="640" height="420" rx="28" fill="#f3eee4"/>
+  <circle cx="320" cy="184" r="94" fill="#e2d5bf"/>
+  <path d="M259 192h122l-12 94h-98z" fill="#fffaf1" stroke="#806c4f" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M278 192c4-30 20-46 42-46s38 16 42 46" fill="none" stroke="#806c4f" stroke-width="8"/>
+  <path d="M287 224h66" stroke="#b48b52" stroke-width="8" stroke-linecap="round"/>
+  <text x="320" y="350" text-anchor="middle" fill="#4a4034" font-family="Arial,sans-serif" font-size="26" font-weight="700">GET ANYTHING</text>
+</svg>

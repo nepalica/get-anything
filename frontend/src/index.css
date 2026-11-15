@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: #faf9f7;
+  color: #292724;
+  font-family: "DM Sans", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bricolage Grotesque", "DM Sans", sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+html.dark-mode {
+  color-scheme: dark;
+}
+
+html.dark-mode body {
+  background: #171614;
+  color: #e9e4dc;
+}
+
+html.dark-mode [class*="bg-white"],
+html.dark-mode [class*="bg-[#f"] {
+  background-color: #24221f !important;
+}
+
+html.dark-mode [class*="bg-[#f1ece5]"] {
+  background-color: #2b2824 !important;
+}
+
+html.dark-mode [class*="border-[#"] {
+  border-color: #3b3732 !important;
+}
+
+html.dark-mode [class*="text-[#"] {
+  color: #e4ded5 !important;
+}
+
+html.dark-mode [class*="text-[#a948"],
+html.dark-mode [class*="text-[#985"],
+html.dark-mode [class*="text-[#b74"] {
+  color: #f0a06c !important;
+}
+
+html.dark-mode input,
+html.dark-mode textarea,
+html.dark-mode select {
+  border-color: #4b4640;
+  background-color: #211f1c;
+  color: #eee9e2;
+}
+
+html.dark-mode input::placeholder,
+html.dark-mode textarea::placeholder {
+  color: #a49b91;
+}
+
+html.dark-mode [class*="bg-red-50"] {
+  background-color: #382321 !important;
+}
+
+html.dark-mode [class*="text-red-700"] {
+  color: #f3a29a !important;
+}
+
+html.dark-mode [class*="bg-orange-50"] {
+  background-color: #3b2a1e !important;
+}
+
+html.dark-mode [class*="text-orange-800"] {
+  color: #f0a06c !important;
+}
+
+@media (min-width: 1024px) {
+  html.sidebar-collapsed [class~="lg:pl-60"] {
+    padding-left: 4.5rem !important;
+  }
+
+  html.sidebar-collapsed [class~="lg:ml-60"] {
+    margin-left: 4.5rem !important;
+  }
+}
