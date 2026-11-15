@@ -3,6 +3,7 @@ import { BASE_URL } from "../constants";
 
 const baseQuery = fetchBaseQuery({
   baseUrl: BASE_URL,
+  credentials: "include",
   responseHandler: async (response) => {
     const body = await response.text();
     if (!body) return null;

@@ -80,9 +80,14 @@ const loginUser = asyncHandler(async (req, res) => {
 });
 
 const logoutCurrentUser = asyncHandler(async (req, res) => {
+  const isProduction = process.env.NODE_ENV !== "development";
+
   res.cookie("jwt", "", {
-    httyOnly: true,
+    httpOnly: true,
+    secure: isProduction,
+    sameSite: isProduction ? "none" : "lax",
     expires: new Date(0),
+    path: "/",
   });
 
   res.status(200).json({ message: "Logged out successfully" });
