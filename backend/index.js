@@ -40,7 +40,6 @@ const __dirname = path.resolve();
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 await connectDB();
-await connectDB();
 
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server running on port: ${port}`);
